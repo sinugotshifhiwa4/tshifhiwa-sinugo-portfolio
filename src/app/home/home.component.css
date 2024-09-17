@@ -1,0 +1,162 @@
+.hero-section {
+  background-color: var(--pastel-pop-secondary);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--pastel-pop-secondary)),
+    to(var(--pastel-pop-primary))
+  );
+  color: #fff;
+  padding: 60px 0;
+  text-align: left;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.home-content .title,
+.home-content .name,
+.home-content .job {
+  margin: 0;
+  padding: 0;
+}
+
+.home-content .title {
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-light);
+  background: linear-gradient(135deg, #0077b6, #56c77a);
+  border-radius: 20px 0 20px 0; /* Rounded top-left and bottom-right corners */
+  padding: 15px 30px;
+  display: inline-block;
+  color: white; /* Text color */
+}
+
+
+
+.home-content .name {
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.home-content .job {
+  font-size: 2rem;
+  font-weight: var(--font-weight-normal);
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons i {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 10px 10px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: white;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .home-content {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .home-content .title {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+ 
+  }
+  .home-content .name {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .home-content .job {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .hero-section svg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .hero-section .info {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the list items horizontally */
+    justify-content: flex-start;
+    text-align: center; /* Center the text */
+  }
+
+  .hero-section .info i {
+    font-size: 1.3rem; /* Maintain icon size */
+    margin-right: 0; /* Remove right margin to avoid misalignment */
+    margin-bottom: 5px; /* Add a small space below the icon */
+  }
+
+  .hero-section .info li {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: center; /* Center both icon and text */
+    margin-bottom: 10px; /* Add some spacing between list items */
+  }
+}
+
+.hero-section .info {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.hero-section .info li {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add space between items */
+}
+
+.hero-section .info i {
+  font-size: 1.3rem; /* Ensure icons are larger */
+  margin-right: 10px;
+}
