@@ -22,7 +22,6 @@
   --white: #fff;
   --white-smoke: #f7f6f7;
 
-
   /* Fusion Colors */
   --fusion-light: #d6e6f2;
   --fusion-medium: #c8abe6;
@@ -44,9 +43,8 @@
   --dark-primary: #414a4c;
   --dark-secondary: #3b444b;
   --dark-1: #353839;
-  --dark-2:#232b2b;
-  --dark-3:#0e1111;
-
+  --dark-2: #232b2b;
+  --dark-3: #0e1111;
 
   /* Nomad Colors */
   --nomad-background: #e6e5e1;
@@ -85,4 +83,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-family);
+}
+
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
 }

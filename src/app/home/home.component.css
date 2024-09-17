@@ -4,8 +4,8 @@
     linear,
     left top,
     right top,
-    from(var(--pastel-pop-secondary)),
-    to(var(--pastel-pop-primary))
+    from(var(#2c3e50),
+    to(#3498db))
   );
   color: #fff;
   padding: 60px 0;
@@ -84,7 +84,6 @@
 
 @media (max-width: 991.98px) {
   .hero-section {
-    margin-top: 20px !important;
     text-align: center;
     padding: 40px 20px;
   }

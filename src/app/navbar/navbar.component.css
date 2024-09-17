@@ -2,6 +2,10 @@ nav {
   border-bottom: 2px solid var(--white-smoke);
 }
 
+.navbar {
+  background: linear-gradient(135deg, #0077b6, #56c77a);
+}
+
 .navbar-brand {
   display: flex;
   justify-content: flex-start;
@@ -16,6 +20,7 @@ nav {
   font-size: 1.5rem;
   font-weight: var(--font-weight-black);
   font-style: normal;
+  color: white;
 }
 
 .nav-item {
@@ -26,10 +31,11 @@ nav {
 .nav-item .nav-link {
   font-weight: var(--font-weight-bold);
   cursor: pointer;
+  color: white;
 }
 
 .nav-item .nav-link:hover {
-  color: var(--dark-primary);
+  color: var(--white-smoke);
 }
 
 @media screen and (max-width: 991.98px) {
@@ -73,7 +79,7 @@ nav {
 }
 
 .active {
-    border-bottom: 2px solid var(--nomad-primary);
+    border-bottom: 2px solid black;
     color: var(--nomad-primary);
     transform: scale(1.1);
     transition: color 0.3s ease, transform 0.3s ease, border-bottom 0.3s ease;

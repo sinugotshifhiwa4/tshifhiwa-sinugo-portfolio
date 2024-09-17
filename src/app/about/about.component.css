@@ -1,0 +1,36 @@
+
+  section.about-section {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .about-section .container .row svg {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+  
+  .about-section .header {
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+    margin: 20px 0;
+  }
+  
+  .about-section .header-text {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    section.about-section {
+      padding-top: 20rem; /* Adjust this value based on your navbar height on mobile */
+    }
+  }
+  
